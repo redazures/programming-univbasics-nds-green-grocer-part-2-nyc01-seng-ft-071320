@@ -75,7 +75,7 @@ def checkout(cart, coupons)
   final_cart.each do|item|
     net+=item[:price]*item[:count].to_f
   end
-  net*0.9 if net>100.00
+  # net*0.9 if net>100.00
   p net
 end
 
