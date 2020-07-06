@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
   cart.each do|k|
     hodown=0
     while hodown <coupons.length
-      if k[:item] == coupons[hodown][:item]
+      if k[:item] == coupons[hodown][:item] && k[:count]-coupons[hodown][:num]
         k[:count]=k[:count]-coupons[hodown][:num]
         x={
           :item=>k[:item]+" W/COUPON",
