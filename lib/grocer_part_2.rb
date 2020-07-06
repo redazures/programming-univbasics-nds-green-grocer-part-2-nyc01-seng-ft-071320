@@ -1,7 +1,8 @@
 require_relative './part_1_solution.rb'
 
 coupons=[
-  {:item => "AVOCADO", :num => 2, :cost => 5.00}
+  {:item => "AVOCADO", :num => 2, :cost => 5.00},
+  {:item => "KALE", :num => 1, :cost => 2.50}
 ]
 
 cart =[
@@ -26,9 +27,9 @@ def apply_coupons(cart, coupons)
         k[:count]=k[:count]-coup[:num]
         x={
           :item=>k[:item]+" W/COUPON",
-          :price=>coupons[hodown][:cost]/coupons[hodown][:num],
+          :price=>coup[:cost]/coup[:num],
           :clearance=>true,
-          :count=>coupons[hodown][:num]
+          :count=>coup[hodown][:num]
         }
         # coupon<<x
 
