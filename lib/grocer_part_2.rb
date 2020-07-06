@@ -21,8 +21,7 @@ def apply_coupons(cart, coupons)
   new_cart=[]
   # coupon=[]
   cart.each do|k|
-    hodown=0
-    while hodown <coupons.length
+    coupons.each do|coup|
       if k[:item] == coupons[hodown][:item] && k[:count]>=coupons[hodown][:num]
         k[:count]=k[:count]-coupons[hodown][:num]
         x={
@@ -32,11 +31,7 @@ def apply_coupons(cart, coupons)
           :count=>coupons[hodown][:num]
         }
         # coupon<<x
-        hodown+=1
-      else
-        hodown+=1
-      end
-    end
+
     new_cart<<k
     new_cart<<x
   end
