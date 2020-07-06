@@ -32,9 +32,9 @@ def apply_coupons(cart, coupons)
           :count=>coup[:num]
         }
       end
-      new_cart<<k
-      new_cart<<x
     end
+    new_cart<<k
+    new_cart<<x
   end
   new_cart
 end
