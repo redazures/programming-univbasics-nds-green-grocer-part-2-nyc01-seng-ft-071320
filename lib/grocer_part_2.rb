@@ -34,7 +34,7 @@ def apply_coupons(cart, coupons)
       end
     end
     new_cart<<k
-    new_cart<<x
+    new_cart<<x if x!=nil
   end
   new_cart
 end
