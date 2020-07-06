@@ -83,7 +83,7 @@ def checkout(cart, coupons)
   p net
 end
 
-cart1=consolidate_cart(cart)
+cart1=consolidate_cart(cart2)
 p cart1
 p apply_coupons(cart1, coupons)
 # p checkout(cart,coupons)
