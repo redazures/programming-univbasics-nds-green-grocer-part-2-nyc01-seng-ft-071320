@@ -22,8 +22,8 @@ def apply_coupons(cart, coupons)
   # coupon=[]
   cart.each do|k|
     coupons.each do|coup|
-      if k[:item] == coupons[hodown][:item] && k[:count]>=coupons[hodown][:num]
-        k[:count]=k[:count]-coupons[hodown][:num]
+      if k[:item] == coup[:item] && k[:count]>=coup[:num]
+        k[:count]=k[:count]-coup[:num]
         x={
           :item=>k[:item]+" W/COUPON",
           :price=>coupons[hodown][:cost]/coupons[hodown][:num],
