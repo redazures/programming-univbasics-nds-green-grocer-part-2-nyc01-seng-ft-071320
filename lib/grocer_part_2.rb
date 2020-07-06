@@ -72,5 +72,5 @@ end
 
 cart1=consolidate_cart(cart)
 p cart1
-#p apply_coupons(cart1, coupons)
+p apply_coupons(cart1, coupons)
 # p checkout(cart,coupons)
