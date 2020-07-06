@@ -31,10 +31,6 @@ def apply_coupons(cart, coupons)
           :clearance=>true,
           :count=>coup[:num]
         }
-        new_cart<<k
-        new_cart<<x
-      else
-        new_cart<<k
       end
     end
   end
