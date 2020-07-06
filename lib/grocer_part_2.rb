@@ -2,7 +2,7 @@ require_relative './part_1_solution.rb'
 
 coupons=[
   {:item => "AVOCADO", :num => 2, :cost => 5.00},
-  {:item => "KALE", :num => 1, :cost => 2.50}
+  {:item => "KALE", :num => 1, :cost => 2.00}
 ]
 
 cart =[
