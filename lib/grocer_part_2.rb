@@ -38,7 +38,7 @@ def apply_coupons(cart, coupons)
         x={
           :item=>k[:item]+" W/COUPON",
           :price=>coup[:cost]/coup[:num],
-          :clearance=>true,
+          :clearance=>k[:clearance],
           :count=>coup[:num]
         }
       end
