@@ -36,6 +36,7 @@ def apply_coupons(cart, coupons)
       else
         new_cart<<k
       end
+    end
   end
   new_cart
 end
