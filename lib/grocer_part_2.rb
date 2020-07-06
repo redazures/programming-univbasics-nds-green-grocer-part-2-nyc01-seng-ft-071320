@@ -31,11 +31,12 @@ def apply_coupons(cart, coupons)
           :clearance=>true,
           :count=>coup[hodown][:num]
         }
+        new_cart<<k
+        new_cart<<x
+      else
+        new_cart<<k
       end
-    new_cart<<k
-    new_cart<<x
   end
-  # new_cart.concat(coupon)
   new_cart
 end
 
