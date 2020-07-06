@@ -76,7 +76,6 @@ def checkout(cart, coupons)
     net+=item[:price]*item[:count].to_f
   end
   net=net*0.9 if net>100.00
-  net
 end
 
 cart1=consolidate_cart(cart2)
